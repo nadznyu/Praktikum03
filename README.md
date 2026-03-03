@@ -30,3 +30,19 @@
      mahasiswa beserta atributnya.
    - class MahasiswaDemo16 bertugas sebagai class yang melakukan eksekusi karena bersisi fungsi 
      main (menangani logika program seperti input, pembuatan array, output).
+
+***Percobaan 2***
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah 
+   no 3.
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. 
+   Mengapa kode berikut menyebabkan error?
+   Mahasiswa16 [] myArrayOfMahasiswa = new Mahasiswa16();
+   myArrayOfMahasiswa[0].nim = "244107060033";
+   myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+   myArrayOfMahasiswa[0].kelas = "SIB-1E";
+   myArrayOfMahasiswa[0].ipk = (float) 3.75;
+
+***Jawaban Percobaan 2***
+1. Sudah
+2. Karena newMahasiswa16[3] hanya membuat array dengan 3 slot kosong, dan elemen masih bernilai 
+   null. Belum ada objek Mahasiswa yang dibuat, sehingga ketika program berusaha mencoba akses myArrayOfMahasiswa[0], program menjalankan dari null sehingga terjadi error. Solusinya yaitu menambahkan instansiasi object terlebih dahulu sebelum mengisi atribut.
