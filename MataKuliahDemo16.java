@@ -7,6 +7,8 @@ public class MataKuliahDemo16 {
         int sks, jumlahJam;
 
         for (int i = 0; i < 3; i++) {
+
+            arrayOfMataKuliah16[i] = new MataKuliah16("-", "-", 0, 0);
             System.out.println("Masukkan Data Matakuliah ke-" + (i + 1));
             System.out.print("Kode        : ");
             kode = sc.nextLine();
@@ -20,7 +22,7 @@ public class MataKuliahDemo16 {
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("-------------------------------");
 
-            arrayOfMataKuliah16[i] = new MataKuliah16(kode, nama, sks, jumlahJam);
+            arrayOfMataKuliah16[i].tambahData(kode, nama, sks, jumlahJam);
         }
 
         for (int i = 0; i < 3; i++) {
