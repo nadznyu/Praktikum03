@@ -31,12 +31,11 @@ public class DosenDemo16 {
             arrayOfDosen16[i] = new Dosen16(kode, nama, jenisKelamin, usia);
         }
 
-        int no = 1;
-        for (Dosen16 d : arrayOfDosen16) {
-            System.out.println("Data Dosen ke-" + no);
-            d.cetakInfo();
-            no++;
-
-        }
+        DataDosen16 dataDosen = new DataDosen16();
+        dataDosen.dataSemuaDosen(arrayOfDosen16);
+        dataDosen.jumlahDosenPerJenisKelamin(arrayOfDosen16);
+        dataDosen.rerataUsiaDosenPerJenisKelamin(arrayOfDosen16);
+        dataDosen.infoDosenPalingTua(arrayOfDosen16);
+        dataDosen.infoDosenPalingMuda(arrayOfDosen16);
     }
 }
