@@ -46,3 +46,32 @@
 1. Sudah
 2. Karena newMahasiswa16[3] hanya membuat array dengan 3 slot kosong, dan elemen masih bernilai 
    null. Belum ada objek Mahasiswa yang dibuat, sehingga ketika program berusaha mencoba akses myArrayOfMahasiswa[0], program menjalankan dari null sehingga terjadi error. Solusinya yaitu menambahkan instansiasi object terlebih dahulu sebelum mengisi atribut.
+
+***Percobaan 3***
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class 
+   MatakuliahDemo untuk menambahkan data Matakuliah
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class 
+   MatakuliahDemo untuk menampilkan data hasil inputan di layar
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari array of 
+   object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+***Jawaban Percobaan 3***
+1. Bisa, suatu class bisa memiliki lebih dari 1 constructor. Contoh :
+   - Constructor default 
+     public Matakuliah() {
+        this.kode = "-";
+        this.nama = "-";
+        this.sks = 0;
+        this.jumlahJam = 0;
+     }
+   - Constructor berparameter
+     public Matakuliah(String kode, String nama, int sks, int jumlahJam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahJam = jumlahJam;
+     }
+2. Sudah commit di github
+3. Sudah commit di github
+4. Sudah commit di github
